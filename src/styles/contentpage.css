@@ -1,0 +1,125 @@
+.content-page {
+  margin-top: 2rem;
+  color: #ffffff;
+  color: #0c0700aa;
+  color: #e5a03eaa;
+  text-shadow: 0px 0px 10px rgb(6, 0, 0);
+}
+
+.grid-elements {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.grid-elements .flex-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 3px 1px 10px #e5a03eaa;
+  padding-top: 1rem;
+}
+.grid-elements .flex-elements:hover {
+  transform: scale(1.01);
+  transition: all 0.5s ease-in-out;
+  filter: drop-shadow(0 0 1rem rgb(0, 106, 255));
+}
+.grid-elements .flex-elements:hover > * {
+  transform: scale(1.01);
+}
+.grid-elements .flex-elements img {
+  object-fit: cover;
+  width: 90%;
+  height: auto;
+  min-height: 40px;
+  position: relative;
+}
+.grid-elements .flex-elements .img {
+  position: relative;
+}
+.grid-elements .flex-elements .main-text {
+  position: absolute;
+  padding: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  text-align: center;
+  height: 20%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  font-size: clamp(1rem, 5vw, 1.5rem);
+  filter: drop-shadow(0 0 0.5rem rgb(19, 0, 7));
+  width: fit-content;
+}
+
+.flex-elements .more-texts {
+  margin: 0;
+  color: black;
+  bottom: 0;
+  padding: 0.5rem;
+}
+.grid-elements .flex-elements .cta {
+  margin: 0;
+  position: relative;
+  bottom: -0.2rem;
+  right: -1rem;
+  font-weight: bolder;
+  color: #000000aa;
+  border-radius: 50%;
+}
+.grid-elements .flex-elements .cta:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+  filter: drop-shadow(0 0 1rem rgb(56, 102, 216));
+  color: #e6e6e6aa;
+}
+
+@media screen and (max-width: 1030px) {
+  .content-page {
+    margin-top: 0.5rem;
+  }
+  .grid-elements {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .content-page {
+    margin-top: 0.5rem;
+  }
+  .grid-elements {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .flex-elements .more-texts {
+    top: 50%;
+    font-size: 16px;
+  }
+
+  .grid-elements .flex-elements .img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 430px) {
+  .grid-elements {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .flex-elements .more-texts {
+    top: 50%;
+    font-size: 13px;
+  }
+
+  .grid-elements .flex-elements .img {
+    width: 100%;
+  }
+}
