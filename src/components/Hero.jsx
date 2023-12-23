@@ -7,7 +7,7 @@ const Hero = () => {
       <h1>
         <span style={{color:'darkgoldenrod'}}>
           Tech in your Neighborhood. <br/>
-          let's Create, Code and Build Always test <br />
+          let's Create, Code and Build together <br />
         </span>
         Read the Tech Stack Guide below this section
       </h1>
